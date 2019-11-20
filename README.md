@@ -1,6 +1,6 @@
 # BancoDelTiempoProject
 
-[Mock Ups](ttps://imgur.com/a/PQt19qB)
+[Mock Ups](https://imgur.com/a/PQt19qB)
 
 [UMLS](https://imgur.com/a/rDGHzoT)
 
