@@ -1,0 +1,90 @@
+/* #cont_servicios {
+    width:1100px; 
+    height:680px; 
+    position:absolute; 
+    margin-left: 8%; 
+    margin-top: 8%;
+    background:deeppink ;
+} */
+.select_servicios {
+	width: 40%;
+	height: 50%;
+	right: 28%;
+	top: 20%;
+	position: absolute;
+	z-index: 0;
+}
+/* ajuste para servicios */
+.select_servicios>div {
+	float: left;
+	margin-top: 40px;
+	height: 203px;
+	margin-right: 5px;
+	width: 195px;
+	text-align: center;
+}
+
+.product {
+	border: rgb(28, 163, 156) 4px solid;
+	margin-left: 40px;
+	margin-bottom: 120px;
+	border: silver 20px solid;
+	border-image-source: url("../images/pastilla8.png");
+	border-image-slice: 20 fill;
+	color: white;
+}
+
+.product h1 {
+	color: #181a1c !important;
+	font-size: 13px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	margin-top: 6px;
+}
+
+.product p {
+	color: #181a1c;
+	font-size: 7px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin-top: -20px;
+	padding: 0;
+}
+
+.product img {
+	margin-top: 10px;
+}
+
+.tabla_servicios{
+margin-left: 10px;
+} 
+
+tr:nth-child(4n+1) {
+    background: darkcyan;
+}
+
+tr:nth-child(4n+2) {
+    background: rgb(1, 37, 37);
+}
+
+tr:nth-child(4n+3) {
+    background: rgb(1, 37, 37);
+}
+tr:nth-child(4n+4) {
+    background: rgb(1, 37, 37);
+}
+
+.listAllJobs{
+margin-top:10px;	
+margin-left: 30px;
+}
+/* tr:nth-child(2n+4) {
+    background-color:#0b5242;
+} */
+/* tr:nth-child(2+2n) {
+    background-color:#689db6;
+} */
+/* tr:hover {
+    background-color: rgb(24, 148, 142);
+    } */
+

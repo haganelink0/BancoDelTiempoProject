@@ -1,0 +1,102 @@
+#wrap {
+  margin: 0 auto 30px;
+}
+
+#regbar {
+  height: 67px;
+  background: #34495e;
+}
+
+#navthing {
+  margin-left: 50px;
+}
+
+
+fieldset {
+  border: none;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  margin-top: 10%;
+  display: none;
+  
+}
+
+.formholder {
+  float: right;
+  margin-right: 30%;
+  width: 350px;
+  border-radius: 5px;
+  padding-top: 5px;
+
+}
+
+.formholder input[type="email"], .formholder input[type="password"],
+.formholder input[type="text"], .formholder input[type="tel"],
+.formholder input[type="button"], .formholder select, .formholder button{
+
+  padding: 7px 5px;
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.formholder input[type="email"]:focus, .formholder input[type="password"]:focus ,
+.formholder input[type="text"]:focus, .formholder input[type="tel"]:focus,
+.formholder input[type="button"]:focus{
+  outline: none;
+  box-shadow: 0 0 1px 1px #1abc9c;
+}
+
+.formholder input[type="submit"] {
+ margin-top: 40px;
+  background: #1abc9c;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.formholder input[type="submit"]:hover {
+  background: #1bc6a4;
+}
+
+.randompad {
+  padding: 10px;
+}
+
+.green {
+  color: #1abc9c;
+}
+
+a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+a:hover {
+  color: #1abc9c;
+}
+
+.cont_register{
+  display: none;
+}
+
+#cont_servicios{
+  display: none;
+}
+ 
+
+
+  

@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>time bank</title>
+
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styleServicios.css">
+	<link rel="stylesheet" href="css/stylelogin.css">
+	<link rel="stylesheet" href="css/styleregistro.css">
+	<link rel="stylesheet" href="css/stylecarrusel.css">
+	
+</head>
+
+<body>
+
+
+	<!------------------------------------------------- IMAGEN DE FONDO -------------------------------->
+
+	<div id="fondo">
+		<img id="estirada" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -50"
+			src="images/image_fondo.png" />
+	</div>
+
+
+	<!----------------------------------------------- CONETENEDOR CABECERA ----------------------------->
+
+	<div id="contenedor">
+
+
+		<!------------------------------------------------ CABECERA ------------------------------------>
+
+		<div id="contenedor_cabecera">
+			<header id="cabecera">
+				<div id="logo">
+					<img src="images/logo animado.gif" alt="Lights" class="w3-image">
+					<h4>
+						<a href="index.html" class="text-black mb-0"><b class="text-black">TIME<span
+									class="w3-text-teal">BANK</span></b></a>
+					</h4>
+				</div>
+
+
+				<!---------------------------------------BARRA MENU----------------------------------->
+
+				<nav id="menu">
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a href="#" style="color: black">Home</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a id="selecService" style="color: black" href="#">Services</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a id="contacto" style="color: black" href="mailto:example@cifo.com">Contact</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a id="aboutform" style="color: black" href="#">About</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a id="logoutform" style="color: black" href="index">Logout</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+				</nav>
+			</header>
+		</div>
+
+
+		<!---------------------------------------------------- PERFIL USER ---------------------------------------------->
+
+		<aside id="sesion_user">
+
+
+			<!--------------------------------------------------INFO USER------------------------------------------------>
+
+			<div id="info_user">
+				<div class="name_user">
+					<p class="w3-large">
+						<i class="fa fa-user-circle-o fa-fw w3-margin-right w3-xlarge w3-text-teal"></i><b
+							class="w3-text-orange"><a th:text="${user.name}"></a></b>
+					</p>
+
+					<p class="w3-large">
+						<i class="fa fa-clock-o fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Horas:
+						<b class="w3-text-orange"><a th:text="${user.horas}"></a></b>
+					</p>
+
+				</div>
+			</div>
+			<div id="logo_user">
+				<img src="images/person_1.jpg" id="logo_user" style="position: absolute; border: 2px solid orange;"
+					alt="Avatar">
+			</div>
+
+			<div id="editar_perfil">
+				<p class="w3-large">
+					<i class="fa fa-cog fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>
+					<a id="registerform" href="#" class="tm-nav-item-link">Perfil</a>
+				</p>
+			</div>
+			<div id="text_iconos_servicios">
+				<p class="w3-large">
+					<i class="fa fa-sitemap fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>
+					<a id="jobsUserform" href="#" class="tm-nav-item-link">Servicios</a>
+				</p>
+			</div>
+			<div id="iconos_servicios">
+				<img src="images/educacion.png" style="width: 10%"> <img src="images/servicios domesticos.png"
+					style="width: 10%"> <img src="images/carpintero.png" style="width: 10%"> <img
+					src="images/electricista.png" style="width: 10%"> <img src="images/fontanero2.png"
+					style="width: 10%"> <img src="images/reparaciones.png" style="width: 10%"> <img
+					src="images/mecanico2.png" style="width: 10%"> <img src="images/albañil.png" style="width: 10%">
+
+			</div>
+
+
+			<!------------------------------------------------ CONSULTAS USER--------------------------------------------->
+
+			<div id="opciones">
+				<hr class="linea_orange">
+				<p class="w3-xlarge">
+					<b><i class=" fa-fw w3-margin-right w3-text-teal"></i>Servicios</b>
+				</p>
+				<p class="w3-large">
+					<i class="fa fa-navicon fa-fw w3-margin-right w3-xlarge w3-text-teal"></i><a href="#"
+						class="tm-nav-item-link">Servicios activos </a><span class="green">4</span>
+				</p>
+				<hr class="lineaGray">
+
+				<p class="w3-xlarge">
+					<b><i class="fa-fw w3-margin-right w3-text-teal"></i>Pendientes
+						Aceptación</b>
+				</p>
+
+				<p class="w3-large">
+					<i class="fa fa-share fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>
+					<a href="#" class="tm-nav-item-link">Por Usuario </a><span class="green">2</span>
+				</p>
+
+				<p class="w3-large">
+					<i class="fa fa-reply fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>
+					<a href="#" class="tm-nav-item-link">Por Demandante </a> <span class="green">2</span>
+				</p>
+				<hr class="lineaGray">
+
+				<p class="w3-xlarge">
+					<b><i class="fa-fw w3-margin-right w3-text-teal"></i>Pendientes
+						Realización</b>
+				</p>
+				<p class="w3-large">
+					<i class="fa fa-wrench fa-fw w3-margin-right w3-xlarge w3-text-teal"></i><a href="#"
+						class="tm-nav-item-link">Trabajos Pendientes </a> <span class="green">0</span>
+				</p>
+				<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width: 100%">
+					<div class="w3-center w3-text-white">100%</div>
+				</div>
+				<hr class="lineaGray">
+				<p class="w3-xlarge">
+					<b><i class="fa-fw w3-margin-right w3-text-teal"></i>Histórico</b>
+				</p>
+				<p class="w3-large">
+					<i class="fa fa-thumbs-up fa-fw w3-margin-right w3-xlarge w3-text-teal"></i><a href="#"
+						class="tm-nav-item-link">Tabajos Realizados </a>
+				</p>
+				<br>
+			</div>
+
+		</aside>
+
+
+		<!------------------------------------------------ CONTENEDOR CENTRAL ---------------------------------------------->
+
+		<section class="cont_date" id="contenido">
+
+
+
+			<div>
+				<!--CONTENEDOR DE SERVICIOS-->
+				<div id="cont_servicios">
+					<!-- <img class="img_carrusel" src="images/fondo_sevicios.png" style="width: 100%;  " -->
+
+					<div class="select_servicios">
+						<div class="product" id="product_0">
+							<form method="post" action="/jobsByCategory">
+								<input type="hidden" name="category" value="construccion" />
+								<input type="image" src="images/albañil.png" width="100px" height="100px" />
+								<h4>CONSTRUCCION</h4>
+							</form>
+						</div>
+
+						<div class="product" id="product_1">
+							<form method="post" action="/jobsByCategory">
+								<input type="hidden" name="category" value="educacion" />
+								<input type="image" src="images/educacion.png" width="100px" height="100px" />
+								<h4>EDUCACION</h4>
+							</form>
+						</div>
+
+						<div class="product" id="product_2">
+							<form method="post" action="/jobsByCategory">
+								<input type="hidden" name="category" value="carpinteria" />
+								<input type="image" src="images/carpintero.png" width="100px" height="100px" />
+							<h4>CARPINTERIA</h4>
+						</form>
+						</div>
+						<div class="product" id="product_3">
+							<form method="post" action="/jobsByCategory">
+								<input type="hidden" name="category" value="electricista" />
+								<input type="image" src="images/electricista.png" width="100px" height="100px" />
+							<h4>ELECTRICISTA</h4>
+						</form>
+						</div>
+						<div class="product" id="product_4">
+							<form method="post" action="/jobsByCategory">
+								<input type="hidden" name="category" value="fontanero" />
+								<input type="image" src="images/fontanero2.png" width="100px" height="100px" />
+							<h4>FONTANERO</h4>
+						</form>
+						</div>
+						<div class="product" id="product_5">
+							<form method="post" action="/jobsByCategory">
+								<input type="hidden" name="category" value="mecanico" />
+								<input type="image" src="images/mecanico2.png" width="100px" height="100px" />
+							<h4>MECANICO</h4>
+						</form>
+						</div>
+
+						<div class="product" id="product_6">
+							<form method="post" action="/jobsByCategory">
+								<input type="hidden" name="category" value="reparaciones" />
+								<input type="image" src="images/reparaciones.png" width="100px" height="100px" />
+							<h4>REPARACIONES</h4>
+						</form>
+						</div>
+
+						<div class="product" id="product_7">
+							<form method="post" action="/jobsByCategory">
+								<input type="hidden" name="category" value="domesticos" />
+								<input type="image" src="images/servicios domesticos.png" width="100px" height="100px" />
+							<h4>
+								SERVICIOS<br>DOMESTICOS
+							</h4>
+						</form>
+						</div>
+
+
+					</div>
+				</div>
+
+
+				<!------------------------------------------  EDITAR PERFIL -------------------------------------->
+
+				<div class="cont_register">
+					<form method="post" action="registro">
+						<div class="register1">
+							<div class="form_register">
+								<div class="re_left">
+
+									<label for="name">Nombre</label> <input type="text" name="name"
+										th:value="${user?.name}" id="name" required /> <label
+										for="location">Ubicacion</label> <input type="text" name="location"
+										th:value="${user?.location}" id="location" required />
+									<div>
+										<label for="birth_day">Fecha de nacimiento</label><input type="date"
+											name="birth_day" value="" id="birth_day" required />
+									</div>
+								</div>
+								<div class="register3">
+									<label for="password">Password</label> <input type="password" name="password"
+										th:value="${user?.password}" id="password" required /> <label
+										name="confirmarPassword">Confirmar
+										Password</label> <input type="password" name="confirmPassword"
+										th:value="${user?.confirmPassword}" id="confirmPassword" required /> <label
+										for="email">email</label> <input type="email" name="email"
+										th:value="${user?.email}" id="email" required /> <label
+										for="phoneNumber">Telefono
+										(Opcional)</label> <input type="tel" name="phoneNumber"
+										th:value="${user?.phoneNumber} " id="phoneNumber" />
+
+
+
+									<!--    <label name="date">Fecha de nacimiento</label>
+                                            <input type="date" th:value="${user?.birthDay}" required />                                                 -->
+									<input type="submit" value="ENVIAR">
+
+								</div>
+							</div>
+						</div>
+				</div>
+				<!-----------------------------------EDITAR JOBS USER---------------------------->
+				<div class="cont_addjobs">
+					<div class="register2">
+						<div class="re_right">
+							<table>
+								<tr>
+									<td class="job_text">SERVICIOS</td>
+									<td class="job_text">DESCRIPCION</td>
+									<td class="job_text">DISPONIBILIDAD</td>
+								</tr>
+							</table>
+							<form method="post" action="listjobs">
+
+								<table id="tableJobs">
+									<tbody>
+										<tr th:each="userJobs:${jobs}">
+											<td class="jobs" th:text="${userJobs.category}"></td>
+											<td class="jobs" th:text="${userJobs.description}"></td>
+											<td class="jobs" th:text="${userJobs.disponibility}"></td>
+											<td><a th:href="@{deleteJob(id=${userJobs.id})}"
+													class="btn btn-danger btn-sm"><b>X</a></td>
+									</tbody>
+								</table>
+
+
+							</form>
+							<form class="form-inline" method="post" action="addJob">
+								<label for="category"></label> <select name="category" id="category" required>
+									<option value="carpinteria">Carpinteria</option>
+									<option value="construccion">Construccion</option>
+									<option value="educacion">Educacion</option>
+									<option value="electricista">Electricista</option>
+									<option value="fontanero">Fontanero</option>
+									<option value="mecanico">Mecanico</option>
+									<option value="reparaciones">Reparaciones</option>
+									<option value="domesticos">S.Domesticos</option>
+								</select> <label for="description"></label><input type="text" name="description"
+									id="description" required> <label for="disponibility"></label><input type="text"
+									name="disponibility" id="disponibility" required> <input type="image"
+									src="images/enviar.png" alt="Enviar" width="38" height="38">
+
+							</form>
+							<form method="post" action="sesionuser">
+								<div class="iniciar_sesion">
+									<input type="image" src="images/iniciarSesion.png" alt="Enviar" width="42"
+										height="42">
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+
+				<!-- 							<div class="register2">
+								<div class="form_register"></div>
+								<div class="re_right">
+									<h3>SERVICIOS &nbsp &nbsp DESCRIPCION &nbsp &nbsp &nbsp
+										&nbsp &nbsp &nbsp &nbsp DISPONIBILIDAD</h3>
+									<table id="pTable">
+										<tbody>
+											<tr>
+												<td>S.No</td>
+												<td>
+													<h5></h5>
+												</td>
+												<td>
+													<h5></h5>
+												</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+									<br /> <input id="addButId" type="button"
+										value="Añadir Servicios"> <br> <input
+										type="submit" value="Enviar">
+								</div>
+							</div>
+						</article>
+					</form>
+				 -->
+			</div>
+	</div>
+
+
+	<!---------------------------------------------- CARRUSEL ------------------------------------>
+
+	<!-- <div class="cont_carrusel">
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			Indicators
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			Wrapper for slides
+			<div class="carousel-inner">
+				<div class="item active">
+
+					<img src="images/carrusel1.png" alt="Los Angeles" style="width: 100%">
+				</div>
+
+				<div class="item">
+					<img src="images/carrusel2.png" alt="Chicago" style="width: 100%">
+				</div>
+
+				<div class="item">
+					<img src="images/carrusel3.png" alt="New york" style="width: 100%">
+				</div>
+			</div>
+
+			Left and right controls
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span>
+			</a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span
+					class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+ -->
+
+	<!--------------------------------------- ABOUT ---------------------------------------------->
+
+	<div class="about">
+		<div class="fondo_about"></div>
+		<a><img class="about" src="images/about3.png"></a>
+	</div>
+	</div>
+	</section>
+	</div>
+
+
+	<!---------------------------------------------- FOOTER ---------------------------------------------->
+
+	<footer id="pie_pagina">
+		<div>
+			<a><img src="images/gencat.png" style="width: 15%; padding: 10px;">
+		</div>
+		<div>
+			<a><img src="images/soc.jpg" style="position: absolute; bottom: 0; width: 20%; padding: 10px;">
+		</div>
+		<marquee direction="up" scrolldelay="200"
+			style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -50;">
+			<div>
+				<h2>
+					<u> Curso de Desarrollador Java</u>
+				</h2>
+				<h2>Projecto final del curso</h2>
+				<h2>Spring Boot con acceso BD</h2>
+				<h2>Desde servidor API Rest</h2>
+				<h2>Realizado por:</h2>
+				<h2>Antón Lage</h2>
+				<h2>Tony Oliver</h2>
+				<h2>Juan José González</h2>
+				<h2>Profesor: Albert Yarza</h2>
+			</div>
+		</marquee>
+		<div>
+			<a><img src="images/pqtm.png" style="position: absolute; top: 0; right: 0; width: 10%; padding: 10px;">
+		</div>
+		<div>
+			<a><img src="images/union_europea.png"
+					style="position: absolute; bottom: 0; right: 0; width: 20%; padding: 10px;">
+		</div>
+	</footer>
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="js/scriptSPA.js"></script>
+	<script src="js/AddService.js"></script>
+	<script src="js/listService.js"></script>
+
+</body>
+
+</html>

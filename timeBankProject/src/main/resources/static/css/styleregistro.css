@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* body {
+    
+  margin: 0;
+  padding: 0;
+  font-family: Sans-serif;
+  background: #2c3e50;
+} */
+#wrap {
+	margin: 0 auto 30px;
+}
+
+#regbar {
+	height: 67px;
+	background: #34495e;
+}
+
+#navthing {
+	margin-left: 50px;
+}
+
+h2 {
+	padding: 20px;
+	color: #ecf0f1;
+}
+
+fieldset {
+	border: none;
+}
+
+.re_left {
+	margin-left: 30px;
+	width: 300px;
+	height: 520px;
+}
+
+.re_right {
+	width: 1312px;
+	height: 300px;
+	margin-left: 50px;
+}
+
+.register2 input[type="text"], 
+	.register2 select, .register2 input[type="date"]
+	{
+	padding: 4px 1px;
+	margin: 1px 0;
+	width: 400px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: 1;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	transition: 0.3s linear;
+}
+
+.register2 input[type="text"]:focus, .register2 select, .register2 input[type="button"]:focus,
+	.register2 input[type="date"]:focus {
+	outline: none;
+	box-shadow: 0 0 1px 1px #1abc9c;
+}
+
+/* .iniciar_sesion input[type="submit"] {
+	background: #1abc9c;
+	padding: 10px;
+	font-size: 20px;
+	width: 1200px;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 30px;
+
+} */
+
+.register2 input[type="submit"] {
+	background: #055f5b;
+	padding: 8px;
+	font-size: 15px;
+	width: 75px;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	/* margin-left: 20px;
+	margin-top: 20px; */
+}
+
+.register1 input[type="email"], .register1 input[type="password"],
+	.register1 input[type="text"], .register1 input[type="tel"], 
+	.register1 select, .register1 button, .register1 input[type="date"] {
+	padding: 1px 1px;
+	margin: 10px 0;
+	width: 96%;
+	display: block;
+	font-size: 18px;
+	border-radius: 10px;
+	border: 1;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	transition: 0.3s linear;
+}
+
+.register1 input[type="email"]:focus, .register1 input[type="password"]:focus,
+	.register1 input[type="text"]:focus, .register1 input[type="tel"]:focus,
+	.register1 input[type="button"]:focus {
+	outline: none;
+	box-shadow: 0 0 1px 1px #1abc9c;
+}
+
+.register1 input[type="submit"], .register1 input[type="button"] {
+	background: #1abc9c;
+	padding: 10px;
+	font-size: 20px;
+	display: block;
+	width: 98%;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	margin-left: 0;
+	margin-top: 20%;
+}
+
+/* .titulo_registro {
+  margin-top: 250PX;
+  margin-left: 365px;
+ position: absolute;
+ color: rgb(238, 166, 12);
+  width: 500px;
+  height: 400px; 
+} 
+*/
+.rButton {
+	background: orange;
+	border-radius: 50px;
+	height: 40px;
+	width: 110px;
+}
+
+.re_right input[type="submit"]:hover, .re_right input[type="button"]:hover
+	{
+	background: #40dabb;
+}
+
+.green {
+	color: #1abc9c;
+}
+
+a {
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1abc9c;
+}
+
+.register1 {
+	width: 800px;
+	height: 500px;
+	border: silver 20px solid;
+	border-image-source: url("../images/pastilla8.png");
+	border-image-slice: 18 fill;
+	color: white;
+	margin-top: 15%;
+	margin-left: 0px;
+	float: left;
+}
+
+.register2 {
+	width: 1400px;
+	height: 600px;
+	border: silver 20px solid;
+	border-image-source: url("../images/pastilla8.png");
+	border-image-slice: 18 fill;
+	color: white;
+	margin-top: 20%;
+	float: left;
+}
+
+.register3 {
+	position: absolute;
+	top: 210px;
+	left: 53%;
+	width: 300px;
+	height: 200px;
+	float: left;
+}
+
+
+.jobs {
+	border-radius: 10px;
+	font-size: x-large;
+	font-weight: inherit;
+	color:white;
+	width: 400px;
+	height: 30px;
+	border: solid 1px black;
+	background: orange;
+}
+.jobs2 {
+	
+	font-size: x-large;
+	font-weight: inherit;
+	color:white;
+	width: 400px;
+	height: 30px;
+	
+
+}
+.job_text{
+	font-size: x-large;
+	font-weight: inherit;
+	width: 400px;
+	height: 30px;
+	
+}
+
+.job_text2{
+	font-size: large;
+	font-weight: inherit;
+	width: 400px;
+	height: 30px;
+color: sandybrown
+}
+.salir{
+	background: #1abc9c;
+	padding: 10px;
+	font-size: 20px;
+	width: 300px;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	
+}
+.position_salir{
+		width: 1300px;
+}
+
+.iniciar_sesion{
+margin-left: 1200px;
+}
+

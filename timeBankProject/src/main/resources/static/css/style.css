@@ -1,0 +1,369 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ body {
+  zoom: 65%;
+}
+
+/* 
+ body{width:100%;} */
+
+ /* body{
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url(../images/image_fondo.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1px;
+    height: 98%;
+    width: 98%;
+    position: absolute;
+    overflow: scroll;
+    ;
+    } */
+
+
+/*  .text-primary {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+ } */
+/* #fondo{
+    background-image: url(../image/image_1);
+} */
+
+ #contenedor{
+    width:95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+
+ }
+
+ #contenedor_cabecera{
+    position:fixed;
+    left:28%;
+    top:10px;
+    height:120px;
+    width:45%;
+
+ }
+
+ #cabecera {
+ 
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: silver 20px solid;
+    border-image-source: url("../images/cabecera4.png");
+    border-image-slice: 20 fill;
+    color: white;
+
+ }
+
+ 
+ header h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 120px;
+ }
+
+ #logo{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    margin-left: 10px;
+    float: left;
+ }
+
+ nav{
+    width: 85%;
+    height: 45%;
+    margin-top: 70px;
+    float: right;
+
+ 
+ }
+.pestaña{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+ 
+}
+.tamaño_pestaña{
+    
+    width: 172px;
+    height: 40px; 
+    border: 21px;
+
+}
+
+ .texto_pestaña{
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    font-size: 25px;
+    }
+ .centrado{
+    /* width: 130px;
+    height: 43px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+ }
+ .barra_menu{
+     padding: 0px;
+     padding-left: 10px;
+ }
+
+
+ /* .barra_menu li{
+     display: inline;
+   
+ } */
+ 
+ /* .barra_menu li a {
+    font-family: Arial;
+    font-size: 18px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    color: #023d37;
+    padding-left: 40px;
+    } */
+
+
+aside {
+    width: 420px;
+    height: 900px;
+    border: silver 15px solid;
+    border-image-source: url("../images/pastilla8.png");
+    border-image-slice: 15 fill;
+    color: white;
+    margin-top: 6%;
+    float: left;
+  
+}
+
+.randompad{
+    width: 420px;
+    height: 340px;
+    border: silver 15px solid;
+    border-image-source: url("../images/pastilla8.png");
+    border-image-slice: 15 fill;
+    color: white;
+    float: right;
+}
+
+
+#info_user{
+    width: 270px;
+    height: 110px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+#logo_user{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    
+}
+
+#editar_perfil{
+    width: 120px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 0px;
+    float: right;
+}
+#text_iconos_servicios{
+    width: 200px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+
+#iconos_servicios{
+    width: 380px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#iconos_servicios_xl{
+    width: 380px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.linea_orange, .hrcolor {
+    height: 2px;
+    border: 0;
+    color: #666;
+    background-color: #F38A04;
+}
+
+span.green {
+    background: #018073;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em;
+}
+
+#opciones{
+    width: 380px;
+    height: 60px;
+    margin-bottom: 10px;
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+}
+p {
+    margin-bottom: 15px;
+}
+
+ #contenido{
+     width: 60%;
+     height: 50%;
+     float: right;;
+     margin-top: 0px;
+     margin-right:21%;
+     margin-bottom: 10px;
+
+ }  
+ #contenido h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 880px;
+}
+.cont_register{
+  margin-left: 28%;
+
+}
+.cont_addjobs{
+    margin-left: 10%;
+  
+  }
+
+footer{
+    margin-top: 20px;
+    clear: both;
+}
+
+footer h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+} 
+
+a:hover {
+/* -webkit-text-stroke: 1px white; */
+text-decoration: none;
+font-weight: lighter;
+font-weight: bolder;
+font-weight: 900;
+color: #023d37
+}
+
+a.class_a_href{
+    pointer-events: none;
+    cursor: default;
+    }
+
+b.text-black{
+    color: black;
+}
+.iconos_servicios_xl{
+
+    float: left;
+    width: 1300px;
+    padding-inline: 100px;
+}
+.iconos_servicios_xl{
+ float: left;
+width: 120%;
+margin-top: 5%;
+padding: 15%;
+}
+
+footer {
+    position:fixed;
+    left:28%;
+    bottom:10px;
+    height:120px;
+    width:45%;
+    border-radius: 0.8em;
+ }
+ #pie_pagina {
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: silver 20px solid;
+    border-image-source: url("../images/cabecera3.png");
+    border-image-slice: 24 fill;
+    color:darkolivegreen;
+ }
+ 
+ .about {
+    position: absolute;
+    width: 69%; 
+    height: 83%;
+    margin-top: 3%;
+    margin-left:16%;
+    display: none;
+  
+  }
+  /* pre{
+      color: white;
+      font-size: large;
+      padding-bottom: 0%;
+  } */
+
+  .cont_jobs {
+	width: 1320px;
+	height: 900px;
+	border: silver 20px solid;
+	border-image-source: url("../images/pastilla8.png");
+	border-image-slice: 18 fill;
+	color: white;
+	margin-top: 10%;
+	margin-left: 220px;
+	float: left;
+
+  /* .cont_jobs {
+    position: absolute;
+    width: 69%; 
+    height: 83%;
+    margin-top: 3%;
+    margin-left:16%;
+    display: none;
+  
+  } */
+

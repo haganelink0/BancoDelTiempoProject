@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>time bank</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/styleServicios.css">
+<link rel="stylesheet" href="css/stylelogin.css">
+<link rel="stylesheet" href="css/styleregistro.css">
+<link rel="stylesheet" href="css/stylecarrusel.css">
+</head>
+
+<body>
+
+	<!-------------------------------------------------IMAGEN DE FONDO-------------------------------->
+
+	<div id="fondo">
+		<img id="estirada"
+			style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -50"
+			src="images/image_fondo.png" />
+	</div>
+
+	<!-----------------------------------------------CONETENEDOR CABECERA----------------------------->
+
+	<div id="contenedor">
+
+
+		<!------------------------------------------------CABECERA------------------------------------>
+
+		<div id="contenedor_cabecera">
+			<header id="cabecera">
+				<div id="logo">
+					<img src="images/logo animado.gif" alt="Lights" class="w3-image">
+					<h4>
+						<a href="index.html" class="text-black mb-0"><b
+							class="text-black">TIME<span class="w3-text-teal">BANK</span></b></a>
+					</h4>
+				</div>
+
+
+				<!---------------------------------------BARRA MENU----------------------------------->
+
+				<nav id="menu">
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a href="#" style="color: black">Home</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a id="selecService" style="color: black" href="#">Service</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a id="contacto" style="color: black"
+								href="mailto:example@cifo.com">Contact</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a id="aboutform" style="color: black" href="#">About</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a id="loginform" style="color: black" href="#">Login</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+					<div class="pestaña">
+						<img class="tamaño_pestaña" src="images/pestaña3.png" />
+						<div class="texto_pestaña">
+							<a id="registerform" style="color: black" href="#">Register</a>
+						</div>
+						<div class="centrado"></div>
+					</div>
+				</nav>
+			</header>
+		</div>
+
+		<!-------------------------------------------CONTENEDOR CENTRAL------------------------------------>
+
+		<section class="cont_date" id="contenido">
+			<div>
+
+
+				<!---------------------------------CONTENEDOR DE SERVICIOS---------------------------------->
+
+				<div id="cont_servicios">
+					<div class="select_servicios">
+						<div class="product" id="product_0">
+							<a title="Educacion" href="index.html"><img
+								class="img_carrusel" src="images/albañil.png" width="100px"
+								height="100px" /></a>
+							<h4>CONSTRUCCION</h4>
+						</div>
+						<div class="product" id="product_1">
+							<a title="Educacion" href="index.html"><img
+								class="img_carrusel" src="images/educacion.png" width="100px"
+								height="100px" /></a>
+							<h4>EDUCACION</h4>
+						</div>
+						<div class="product" id="product_2">
+							<a title="Educacion" href="index.html"><img
+								class="img_carrusel" src="images/carpintero.png" width="100px"
+								height="100px" /></a>
+							<h4>CARPINTERIA</h4>
+
+						</div>
+						<div class="product" id="product_3">
+							<a title="Educacion" href="index.html"><img
+								class="img_carrusel" src="images/electricista.png" width="100px"
+								height="100px" /></a>
+							<h4>ELECTRICISTA</h4>
+
+						</div>
+						<div class="product" id="product_4">
+							<a title="Educacion" href="index.html"><img
+								class="img_carrusel" src="images/fontanero2.png" width="100px"
+								height="100px" /></a>
+							<h4>FONTANERO</h4>
+
+						</div>
+						<div class="product" id="product_5">
+							<a title="Educacion" href="index.html"><img
+								class="img_carrusel" src="images/mecanico2.png" width="100px"
+								height="100px" /></a>
+							<h4>MECANICO</h4>
+
+						</div>
+						<div class="product" id="product_5">
+							<a title="Educacion" href="index.html"><img
+								class="img_carrusel" src="images/servicios domesticos.png"
+								width="100px" height="100px" /></a>
+							<h4>
+								SERVICIOS<br>DOMESTICOS
+							</h4>
+
+						</div>
+						<div class="product" id="product_5">
+							<a title="Educacion" href="index.html"><img
+								class="img_carrusel" src="images/reparaciones.png" width="100px"
+								height="100px" /></a>
+							<h4>REPARACIONES</h4>
+
+						</div>
+					</div>
+				</div>
+
+
+				<!------------------------------------------ADD JOBS ------------------------------------------------>
+							
+                <!-- Respuesta del controlador -->
+                
+				<div class="cont_addjobs">
+					<div class="register2">
+						<div class="re_right">
+							<table>
+								<tr>
+									<td class="job_text">SERVICIOS</td>
+									<td class="job_text">DESCRIPCION</td>
+									<td class="job_text">DISPONIBILIDAD</td>
+								</tr>
+							</table>
+							<form method="post" action="listjobs">
+
+								<table id="tableJobs">
+									<tbody>
+										<tr th:each="userJobs:${jobs}">
+											<td class="jobs" th:text="${userJobs.category}"></td>
+											<td class="jobs" th:text="${userJobs.description}"></td>
+											<td class="jobs" th:text="${userJobs.disponibility}"></td>
+											<td><a th:href="@{deleteJob(id=${userJobs.id})}"
+												class="btn btn-danger btn-sm"><b>X</a></td>
+									</tbody>
+								</table>
+							</form>
+							
+							<!-----------------------formulario de un nuevo registro de trabajo-------------------->
+							
+							<form  class="form-inline" method="post" action="addJob">
+								<label for="category"></label> <select name="category"
+									id="category" required>
+									<option value="carpinteria">Carpinteria</option>
+									<option value="construccion">Construccion</option>
+									<option value="educacion">Educacion</option>
+									<option value="electricista">Electricista</option>
+									<option value="fontanero">Fontanero</option>
+									<option value="mecanico">Mecanico</option>
+									<option value="reparaciones">Reparaciones</option>
+									<option value="domesticos">S.Domesticos</option>
+								</select> <label for="description"></label><input type="text"
+									name="description" id="description" required> <label
+									for="disponibility"></label><input type="text"
+									name="disponibility" id="disponibility" required>
+									
+									<input type="image" src="images/enviar.png" alt="Enviar"
+									width="38" height="38" >						
+							</form>
+							
+							<form  method="post" action="sesionuser">
+							<div class="iniciar_sesion">
+							<input type="image" src="images/iniciarSesion.png" alt="Enviar"
+									width="42" height="42" >
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<!--------------------------------------- ABOUT ---------------------------------------------->
+
+				<div class="about">
+					<div class="fondo_about"></div>
+					<a><img class="about" src="images/about3.png"></a>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!---------------------------------------------- FOOTER ---------------------------------------------->
+
+	<footer id="pie_pagina">
+		<div>
+			<a><img src="images/gencat.png"
+				style="width: 15%; padding: 10px;">
+		</div>
+		<div>
+			<a><img src="images/soc.jpg"
+				style="position: absolute; bottom: 0; width: 20%; padding: 10px;">
+		</div>
+		<marquee direction="up" scrolldelay="200"
+			style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -50;">
+			<div>
+				<h2>
+					<u> Curso de Desarrollador Java</u>
+				</h2>
+				<h2>Projecto final del curso</h2>
+				<h2>Spring Boot con acceso BD</h2>
+				<h2>Desde servidor API Rest</h2>
+				<h2>Realizado por:</h2>
+				<h2>Antón Lage</h2>
+				<h2>Tony Oliver</h2>
+				<h2>Juan José González</h2>
+				<h2>Profesor: Albert Yarza</h2>
+			</div>
+		</marquee>
+		<div>
+			<a><img src="images/pqtm.png"
+				style="position: absolute; top: 0; right: 0; width: 10%; padding: 10px;">
+		</div>
+		<div>
+			<a><img src="images/union_europea.png"
+				style="position: absolute; bottom: 0; right: 0; width: 20%; padding: 10px;">
+		</div>
+	</footer>
+	</div>
+
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<script
+		src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="js/scriptSPA.js"></script>
+	<script src="js/AddService.js"></script>
+	<script src="js/listService.js"></script>
+</body>
+
+</html>
