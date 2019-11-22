@@ -2,6 +2,6 @@ package com.timeBank;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface UserRepository extends CrudRepository<User,String>, UserRepositoryInterface{
+public interface UserRepository extends CrudRepository<User,String>{
 
 }

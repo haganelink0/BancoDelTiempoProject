@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "jobs")
-public class Jobs implements JobsInterface {
+public class Jobs {
 
 	@Id
 	@Column(name = "Id")

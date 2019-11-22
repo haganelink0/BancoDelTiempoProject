@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="usuarios")
-public class User extends UserInterface {
+public class User {
 
 	@Id
 	@Column(name="email")

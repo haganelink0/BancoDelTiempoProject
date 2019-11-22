@@ -12,19 +12,17 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/")
-public class JobsController implements JobsControllerInterface {
+public class JobsController {
 
 	@Autowired
 	JobsService service;
 
-	@Override
 	@RequestMapping(value = "addjobs", method = RequestMethod.GET)
 	public String showJobs(Model model) {
 		model.addAttribute("job", service.findAll());
 		return "sesion";
 	}
 
-	@Override
 	@RequestMapping("/newJob")
 	public String newJob(Model model, HttpSession session) {
 		User user = (User) session.getAttribute("usersesion");
@@ -36,7 +34,6 @@ public class JobsController implements JobsControllerInterface {
 		return "/addjobs.html";
 	}
 
-	@Override
 	@RequestMapping("/addJob")
 	public String insertJob(Jobs job, Model model, HttpSession session) {
 		
@@ -49,14 +46,12 @@ public class JobsController implements JobsControllerInterface {
 		return "redirect:newJob";
 	}
 
-	@Override
 	@RequestMapping("/deleteJob")
 	public String deleteJob(@RequestParam Integer id) {
 		service.deleteJob(id);
 		return "redirect:newJob";
 	}
 	
-	@Override
 	@RequestMapping("/jobsByCategory")
 	public String jobsByCategory(@RequestParam String category, Model model, HttpSession session) {
 		System.out.println(category);
@@ -68,17 +63,17 @@ public class JobsController implements JobsControllerInterface {
 	}
 	
 	
-	@Override
+	
 	@RequestMapping("/SelectJob")
-	public String selectJob(JobsInterface job, Model model, HttpSession session) {
+	public void selectJob(Jobs job, Model model, HttpSession session) {
 		if (session.isNew()) {
-			return "error";
+			
 		} else {
+			session.setAttribute("job", job);
 		}
-		return "sesion";
+		
 	}
 	
-	@Override
 	@RequestMapping("/sesionuser")
     public String sesion(Model model, HttpSession session) {
         User user = (User)session.getAttribute("usersesion");
@@ -86,5 +81,10 @@ public class JobsController implements JobsControllerInterface {
         model.addAttribute("user", user);
 		return"sesion.html";
     }
+	
+	@RequestMapping("/blockjob")
+	public void blockJob(Jobs job, Model model, HttpSession session) {
+		job.setDisponibility("unavailable");
+	}
 
 }

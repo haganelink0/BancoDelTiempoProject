@@ -10,19 +10,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/")
-public class UserController implements UserControllerInterface {
+public class UserController {
 
 	@Autowired
 	UserService userService;
 
-	@Override
 	@RequestMapping(value = "index", method = RequestMethod.GET)
 	public String showUser(Model model) {
 		model.addAttribute("user", userService.findAll());
 		return "index";
 	}
 
-	@Override
 	@RequestMapping("/registro")
 	public String registro(User user, Model model, HttpSession sesion) {
 
@@ -36,7 +34,6 @@ public class UserController implements UserControllerInterface {
 		}
 	}
 
-	@Override
 	@RequestMapping("/login")
 	public String login(User user, Model model, HttpSession sesion) {
 
@@ -49,11 +46,12 @@ public class UserController implements UserControllerInterface {
 			model.addAttribute("user", userService.findById(user.getEmail()));
 			sesion.setAttribute("usersesion", user);
 			System.out.println("ok");
-
+			
 			return "sesion.html";
 		}
 		System.out.println("ko");
 		return "sesion.html";
 	}
 
+	
 }
